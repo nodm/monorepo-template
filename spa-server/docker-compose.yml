@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  spa-server:
+    container_name: spa-server
+#    build:
+#      context: .
+    image: nodm/spa-server:latest
+    ports:
+      - 3000:3000
