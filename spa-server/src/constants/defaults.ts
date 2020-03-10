@@ -17,3 +17,10 @@ export const DEFAULT_SERVER_CONFIG: ServerConfig = {
   staticPrefix: '/static',
   spaConfigEnvVarsPrefix: 'SPA_',
 };
+
+export const CONFIGURABLE_SERVER_KEYS = [
+  'logger',
+  'staticDir',
+  'staticPrefix',
+  'spaConfigEnvVarsPrefix',
+];

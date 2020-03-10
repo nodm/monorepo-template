@@ -29,3 +29,16 @@ export function readConfigFromEnv(prefix: string)  {
       [createConfigKey(key, prefix)]: environmentVariablesObj[key],
     }), {});
 }
+
+export function filterProperties(obj: POJO, keys: string[]): POJO {
+  return Object.keys(obj).reduce((o: POJO, key: string) => {
+    if (keys.includes(key)) {
+      return {
+        ...o,
+        [key]: obj[key],
+      };
+    }
+
+    return o;
+  }, {});
+}

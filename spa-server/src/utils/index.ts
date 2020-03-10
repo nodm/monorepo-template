@@ -1,1 +1,1 @@
-export { readConfigFromEnv } from './configuration.utils';
+export { filterProperties, readConfigFromEnv } from './configuration.utils';
